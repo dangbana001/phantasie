@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantasie - Photography & Videography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#" class="logo">PHANTASIE</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book-session" class="btn btn-gold">Book a Session</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Capture Your **Phantasie**</h1>
+                <p>Exquisite Photography & Videography for Moments that Last Forever.</p>
+                <a href="#portfolio" class="btn btn-gold-outline">View Our Work</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2>Our Portfolio</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="photography">
+                    <img src="https://via.placeholder.com/400x300/333/FFD700?text=Photo+1" alt="Photography Example 1">
+                </div>
+                <div class="gallery-item" data-category="videography">
+                    <img src="https://via.placeholder.com/400x300/333/FFD700?text=Video+Still+1" alt="Videography Example 1">
+                </div>
+                </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Wedding Photography</h3>
+                    <p>Capturing your special day with timeless elegance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Event Videography</h3>
+                    <p>Relive every moment with cinematic video production.</p>
+                </div>
+                </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Phantasie</h2>
+            <p>Welcome to Phantasie, where art meets the lens. We are dedicated to...</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Ready to bring your vision to life? Get in touch!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn-gold">Send Message</button>
+            </form>
+        </section>
+
+        <section id="book-session" class="booking-section">
+            <h2>Book a Session</h2>
+            <form id="bookingForm" class="booking-form">
+                <label for="clientName">Name:</label>
+                <input type="text" id="clientName" placeholder="Your Full Name" required>
+
+                <label for="clientEmail">Email:</label>
+                <input type="email" id="clientEmail" placeholder="Your Email Address" required>
+
+                <label for="clientPhone">Phone:</label>
+                <input type="tel" id="clientPhone" placeholder="Your Phone Number (Optional)">
+
+                <label for="serviceType">Service Type:</label>
+                <select id="serviceType" required>
+                    <option value="">Select a Service</option>
+                    <option value="photography">Photography</option>
+                    <option value="videography">Videography</option>
+                    <option value="both">Both Photography & Videography</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="event">Event</option>
+                </select>
+
+                <label for="preferredDateTime">Preferred Date & Time:</label>
+                <input type="datetime-local" id="preferredDateTime" required>
+
+                <label for="clientMessage">Message:</label>
+                <textarea id="clientMessage" placeholder="Tell us more about your needs..."></textarea>
+
+                <button type="submit" class="btn btn-gold">Submit Booking</button>
+                <p id="bookingMessage" class="hidden"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Phantasie. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">YT</a>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
