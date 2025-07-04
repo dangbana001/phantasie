@@ -76,6 +76,12 @@ a:hover {
 .btn-gold {
     background-color: var(--color-gold);
     color: var(--color-black);
+    background: var(--color-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
 }
 .btn-gold:hover {
     background-color: var(--color-dark-gold);
@@ -85,15 +91,20 @@ a:hover {
 
 .btn-gold-outline {
     background-color: transparent;
-    color: var(--color-gold);
     border: 2px solid var(--color-gold);
+    background: var(--color-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .btn-gold-outline:hover {
     background-color: var(--color-gold);
     color: var(--color-black);
     transform: translateY(-3px);
-    box-shadow: linear-gradient(to right, #a3742a, #f9e79f, #a3742a);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
+
 
 /* --- Header & Navigation --- */
 .main-header {
@@ -180,6 +191,7 @@ a:hover {
 .burger-menu {
     display: none; /* Hidden on desktop */
     cursor: pointer;
+    
 }
 .burger-menu div {
     width: 25px;
@@ -300,6 +312,12 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
     border-color: var(--color-gold);
+    background: var(--color-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
 }
 .service-card h3 {
     background: var(--color-gold);
@@ -538,7 +556,8 @@ form .btn {
 
 /* Smaller Mobile Devices */
 @media (max-width: 480px) {
+    .hero-content h1 {font-size: 50px;}
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
-    .hero-content p { font-size: 1rem; }
+    .hero-content p { font-size: 10px; }
 }
